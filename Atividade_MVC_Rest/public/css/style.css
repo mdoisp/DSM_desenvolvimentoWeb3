@@ -1,0 +1,13 @@
+.pagina-admin header{
+    display: flex !important;
+    margin: 50px;
+    padding-left: 30px;
+}
+.pagina-admin h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+    font-size: large !important;
+}
+button{
+    display: flex !important;
+    padding-right: 10px;
+}

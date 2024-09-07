@@ -1,0 +1,90 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "API de Cadastro",
+    "description": "Documentação da API de Cadastro",
+    "version": "1.0.0"
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "description": "Responsável por entrar na página inicial",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/cadastro": {
+      "post": {
+        "description": "Método para cadastrar um novo usuário no sistema, com nome e e-mail",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "example": "João Silva"
+                },
+                "email": {
+                  "example": "joao@email.com"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/listar": {
+      "get": {
+        "description": "Método que irá listar todos os cadastros",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/contar": {
+      "get": {
+        "description": "Método que realiza a contagem automática sempre que ocorre um cadastro ou um cadastro é removido do sistema",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/excluir/{email}": {
+      "delete": {
+        "description": "Método responsável por excluir os usuários cadastrados",
+        "parameters": [
+          {
+            "name": "email",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    }
+  }
+}
