@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "API de Cadastro",
-    "description": "Documentação da API de Cadastro",
+    "title": "Atividade MVC Rest",
+    "description": "Documentação da atividade",
     "version": "1.0.0"
   },
   "host": "localhost:3000",
@@ -50,7 +50,7 @@
     },
     "/listar": {
       "get": {
-        "description": "Método que irá listar todos os cadastros",
+        "description": "Método que irá listar todos os cadastros que foram realizados",
         "responses": {
           "default": {
             "description": ""

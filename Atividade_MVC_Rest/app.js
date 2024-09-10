@@ -18,6 +18,6 @@ app.use('/', cadastroRoutes);
 app.use('/admin', adminRoutes);
 
 app.listen(3000, () => {
-    console.log('Servidor rodando na porta 3000');
+    console.log('Aplicação rodando em http://localhost:3000');
     console.log('Documentação disponível em: http://localhost:3000/docs');
 });

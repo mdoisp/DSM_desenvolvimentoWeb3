@@ -8,7 +8,6 @@ const CadastroController = {
     criarCadastro: (req, res) => {
         const { nome, email } = req.body;
         Cadastro.criarCadastro(nome, email);
-        res.redirect('/');
     }
 };
 

@@ -1,13 +1,45 @@
-.pagina-admin header{
-    display: flex !important;
-    margin: 50px;
-    padding-left: 30px;
+.pagina-admin nav, .pagina-cadastro nav{
+    align-items: center !important;
+    text-align: center !important;
+    background-color: lightgray !important;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.pagina-admin h2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
-    font-size: large !important;
+.pagina-admin section{
+    background-color:  lightgray;
+    margin: 15px;
+    padding: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+.pagina-admin{
+    background-color: lightslategrey;
+}
+.pagina-cadastro section{
+    text-align: center;
+    align-items: center;
+    background-color:  lightgray;
+    margin: 15px;
+    padding: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+.pagina-cadastro h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
+    color: darkslategrey;
+    margin-bottom: 20px;
+}
+.pagina-cadastro {
+    background-color: lightslategrey;
+}
+.successMessage div{
+    display: none;
 }
 button{
-    display: flex !important;
-    padding-right: 10px;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+}
+footer{
+    margin-top: 50px;
+    text-align: center;
 }

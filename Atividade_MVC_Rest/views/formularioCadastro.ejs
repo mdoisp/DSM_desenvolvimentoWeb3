@@ -4,6 +4,12 @@
 
     <label for="email">Email:</label>
     <input type="email" name="email" id="email" required><br><br>
+    
+    <div id="successMessage" class="alert alert-success" role="alert">
+        Cadastrado com sucesso!
+    </div>
 
-    <button type="submit">Cadastrar</button>
+    <button onclick="ocultarMsg()" type="submit" class="btn btn-primary">Cadastrar</button>
+
+    <script src="/js/ocultarMsg.js"></script>
 </form>
