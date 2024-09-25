@@ -14,8 +14,8 @@ app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 const cadastroRoutes = require('./routes/cadastro');
 const adminRoutes = require('./routes/admin');
-app.use('/', cadastroRoutes);
-app.use('/admin', adminRoutes);
+app.use(cadastroRoutes);
+app.use(adminRoutes);
 
 app.listen(3000, () => {
     console.log('Aplicação rodando em http://localhost:3000');
