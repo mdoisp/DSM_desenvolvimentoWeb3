@@ -13,5 +13,5 @@ const outputFile = './swagger_output.json';
 const endpointsFiles = ['./routes/cadastro.js', './routes/admin.js'];
 
 swaggerAutogen(outputFile, endpointsFiles, doc).then(() => {
-    require('./app');
+    require('./app.js');
 });
